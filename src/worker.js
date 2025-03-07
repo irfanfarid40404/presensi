@@ -18,7 +18,7 @@ export default {
     const filePath = path.startsWith("/") ? path.slice(1) : path;
   
     // Fetch the file from the `dist` directory
-    const file = await fetch(`https://your-storage-url.com/${filePath}`);
+    const file = await fetch(`https://presensi.irfannuddin35272.workers.dev/${filePath}`);
     if (file.status === 200) {
       return new Response(file.body, {
         headers: { "Content-Type": getContentType(filePath) },
